@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali Linux</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+</head>
+<body>
+
+  <div>
+    <div id="contextMenu" class="context-menu">
+      <ul>
+        <li class="context-content"><button>New Folder</button></li>
+        <li class="context-content"><button>Paste</button></li>
+        <li class="context-content"><button>Select All</button></li>
+        <li class="context-content"><button>Arrange Icons</button></li>
+        <li class="context-content"><button>Arrange By...</button></li>
+        <li class="context-content"><button>Show Desktop Files</button></li>
+        <li class="context-content"><button onclick="openTerminal()">Open in Terminal</button></li>
+        <li class="context-content"><button>Change Background...</button></li>
+        <li class="context-content"><button>Desktop Icons Settings</button></li>
+        <li class="context-content"><button>Display Settings</button></li>
+        <li class="context-content"><button id="fullscreenButton">Enter Fullscreen</button></li>
+      </ul>
+    </div>
+    <!-- navbar -->
+    <div class="mainNav">
+      <div class="left-side">
+        <!-- 4 dot -->
+        <div class="square">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <!-- Applications -->
+        <span>
+          Applications
+        </span>
+        <!-- Places -->
+        <span>Places</span>
+      </div>
+        <!-- date time -->
+      <div class="middle">
+          <p id="currentDateTime" onclick="showNotificationBar()"></p>
+          <!-- Notification bar -->
+          <div class="notificationBar">
+            <h3>hi</h3>
+          </div>
+      </div>
+      <div class="right-side">
+        <!-- wifi  sound  battery -->
+        <div class="wifiButton">
+          <img src="./images/rightKey.png">
+        </div>
+        <div class="rightSideNotification"></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="kali">
+      <div class="terminalPos">
+        <div class="kali-terminal">
+          <div class="header">
+            <button class="red-dot" onclick="closeTerminal()">X</button>
+            <button class="yellow-dot"></button>
+            <button class="green-dot"></button>
+          </div>
+          <div class="content" id="content">
+            <p>Welcome to Kali Linux Terminal</p>
+          </div>
+          <div class="input-line">
+            <span class="user">@root:</span>
+            <input type="text" id="commandInput" autofocus>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- Terminal files text editor  mozila metasploit wireshark burp cherry  all -->
+      <div class="taskbar">
+        <div class="tab">
+          <div class="icons">
+            <div class="term icon">
+              <div class="squareTerm" onclick="openTerminal()">
+                <p>$_</p></div>
+            </div>
+            <div class="file icon" onclick="alert('Files...')"><img src="./images/file.png"> </div>
+            <div class="icon textEditor" onclick="alert('textEditor...')"><img src="./images/textEditor.png"> </div>
+            <div class="icon mozila" onclick="alert('mozila...')"><img src="./images/mozila.png"> </div>
+            <div class="icon metasploit" onclick="alert('metasploit...')"><img src="./images/metasploit.png"> </div>
+            <div class="icon burp" onclick="alert('burp...')"><img src="./images/burp.png"> </div>
+            <div class="icon cherry" onclick="alert('cherry')"><img src="./images/cherry.png"> </div>
+            <div class="icon all">
+              <div class="square" onclick="ale()">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
